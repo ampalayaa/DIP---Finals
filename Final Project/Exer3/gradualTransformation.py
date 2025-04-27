@@ -30,7 +30,7 @@ def rotate_video(input_path, output_path, final_angle=90, preserve_content=False
     center = (width / 2, height / 2)
     
     # Prepare output video writer
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # or 'XVID'
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # 'XVID'
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
     
     # Step 4: Loop through each frame
